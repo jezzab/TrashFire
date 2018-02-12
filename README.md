@@ -3,13 +3,16 @@ Mavic Air Firmware modules packaged with a system running GPL busy box binaries.
 
 DJI is currently in *active* violation of GPL *again*... these binaries are intended to be distributed to end users that have purchased a Mavic Air drone,and are seeking to downgrade their aircraft back to its factory state.
 
+![Fresh Hot Trash](https://media1.giphy.com/media/FqtWrearu5vb2/giphy.gif)
+
 This is a continuation of the flagrant disregard for GPL that has been going on for a number of years by DJI as a company. 
+
 
 DJI has been made aware that they are in violation a number of times, they flat out do NOT care:
 https://github.com/MAVProxyUser/dji_system.bin/blob/master/GPL.md
 
 # Current Firmware
-
+```
 Drones:
 wm230 - Mavic Air
 
@@ -18,13 +21,16 @@ wm230_00.02.0026 - V00.02.0026
 wm230_00.02.0032 - V00.02.0032
 wm230_01.00.0100 - V01.00.0100	
 wm230_01.00.0200 - V01.00.0200
+```
 
 # DJI GPL Team 
 If you are having problems getting responses from opensource@dji.com regarding GPL issues, use these addresses for the @dji-sdk OpenSource Team: 
+```
 Yin.Cheung <Yin.Cheung@dji.com>
 Logan Wang <xiaodan.wang@dji.com>
 Owen <cheng.ouyang@dji.com>
 Ted.Liu(刘岿然) <ted.liu@dji.com>
+```
 
 This "Open Source Software" page by DJI is a joke... https://www.dji.com/opensource
 
