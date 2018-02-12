@@ -46,11 +46,15 @@ https://www.arm.com/products/security-on-arm/trustzone
 Each firmware folder above will also inclue an archive of the .tz files and any other TrustZone artifacts that DJI leaves behind. 
 
 We can already tell they have added OP-TEE support to busybox ftpd for encryption of the files. 
+```
 https://www.op-tee.org
 https://github.com/OP-TEE/optee_os/blob/master/documentation/globalplatform_api.md
 https://github.com/linaro-swg/hello_world
 https://github.com/linaro-swg/optee_examples
 https://linux.globallogic.com/materials2017/presentations/Stream%202/Igor%20Opaniuk.%20OP-TEE.pdf
+```
+
+Several OPTEE releate artifacts can be found on the file system. 
 
 ```
 root@eagle_wm230:/ # busybox find / -name "*tee*"
