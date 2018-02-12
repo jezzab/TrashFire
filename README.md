@@ -1,11 +1,11 @@
-# TrashFire
+# TrashFire (by trash we mean the stuff you find in the bottom of a port-o-potty!)
 Mavic Air Firmware modules packaged with a system running GPL busy box binaries... 
 
 DJI is currently in *active* violation of GPL *again*... these binaries are intended to be distributed to end users that have purchased a Mavic Air drone,and are seeking to downgrade their aircraft back to its factory state.
 
-![Fresh Hot Trash](https://pbs.twimg.com/media/DV3mfwTVwAAiA_w.jpg)
+![Fresh Steamy Hot Trash](https://pbs.twimg.com/media/DV3mfwTVwAAiA_w.jpg)
 
-This is a continuation of the flagrant disregard for GPL that has been going on for a number of years by DJI as a company. 
+This is a continuation of the flagrant disregard for GPL that has been going on for a number of years by DJI as a company. It was a pile of poo last summer, why not light it on fire!? 
 
 
 DJI has been made aware that they are in violation a number of times, they flat out do NOT care:
