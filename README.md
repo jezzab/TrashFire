@@ -3,7 +3,7 @@ Mavic Air Firmware modules packaged with a system running GPL busy box binaries.
 
 DJI is currently in *active* violation of GPL *again*... these binaries are intended to be distributed to end users that have purchased a Mavic Air drone,and are seeking to downgrade their aircraft back to its factory state.
 
-![Fresh Hot Trash](https://media1.giphy.com/media/FqtWrearu5vb2/giphy.gif)
+![Fresh Hot Trash](https://pbs.twimg.com/media/DV3mfwTVwAAiA_w.jpg)
 
 This is a continuation of the flagrant disregard for GPL that has been going on for a number of years by DJI as a company. 
 
