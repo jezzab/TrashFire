@@ -83,5 +83,7 @@ root@eagle_wm230:/ # busybox find / -name "*tee*"
 /sys/module/optee
 /dev/teepriv0
 /dev/tee0
+/system/bin/xtest:TEE test application started with device [%s]
+
 ```
 
