@@ -178,9 +178,9 @@ uint8_t[sig_size]	signature	Signature of hash
 ```
 
 # What Exactly Is A Static TA Anyway? How Different Is It Than A Regular Globalplatform Defined (Dynamic) TA?
-```
+
 A static TA is just an interface exposing special services in optee_os core to dynamic TAs and clients. It is code inside the TEE core. As such, it does not have its own address space and can corrupt the whole TEE if poorly written. Also it is usually more difficult to upgrade than a dynamic (user) TA which is a file in the normal world file system.
 On the other hand, a static TA can access the hardware directly by calling any driver code inside the TEE core. This means you may use a static TA to extend the services offered by the GP Internal API, without adding any new system call.
 Client Applications (CAs) in the normal world can communicate with static TAs in the same way they communicate with dynamic TAs. Dynamic TAs can also communicate with static TAs in the same way they communicate with other dynamic TAs, using GP Internal API. Static TAs, however, cannot communicate back to dynamic TAs due to the absence of GP Internal API in optee_os core code.
-```
+
 
