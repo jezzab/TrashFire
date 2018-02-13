@@ -83,6 +83,10 @@ root@eagle_wm230:/ # busybox find / -name "*tee*"
 /sys/module/optee
 /dev/teepriv0
 /dev/tee0
+```
+
+Several obvious TrustZone artifacts are left around... 
+```
 /system/bin/xtest:TEE test application started with device [%s]
 
 ```
