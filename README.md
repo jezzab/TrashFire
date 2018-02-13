@@ -87,5 +87,8 @@ root@eagle_wm230:/ # busybox find / -name "*tee*"
 
 ```
 
-The output from Xtest seems to match this variant
+The output from Xtest seems to match this variant (note the repo source!)
+```
+BOOMERANG: Exploiting the Semantic Gap in Trusted Execution Environments
 https://github.com/ucsb-seclab/boomerang/blob/master/optee/optee_test/host/xtest/xtest_1000.c#L616
+```
