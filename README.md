@@ -54,7 +54,7 @@ https://github.com/linaro-swg/optee_examples
 https://linux.globallogic.com/materials2017/presentations/Stream%202/Igor%20Opaniuk.%20OP-TEE.pdf
 ```
 
-Several OPTEE releate artifacts can be found on the file system. 
+Several OP-TEE releated artifacts can be found on the file system. 
 
 ```
 root@eagle_wm230:/ # busybox find / -name "*tee*"
