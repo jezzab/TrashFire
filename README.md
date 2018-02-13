@@ -146,14 +146,14 @@ https://github.com/OP-TEE/optee_os/blob/master/core/arch/arm/kernel/user_ta.c#L2
  * Loads TA header and hashes.
  * Verifies the TA signature.
  * Returns context ptr and TEE_Result.
-static TEE_Result ta_load(const TEE_UUID *uuid,
+static TEE_Result ta_load(const TEE_UUID uuid,
 			  const struct user_ta_store_ops *ta_store,
-			  struct tee_ta_ctx **ta_ctx)
+			  struct tee_ta_ctx ta_ctx)
 ```
 
 https://github.com/OP-TEE/optee_os/blob/master/core/arch/arm/kernel/ree_fs_ta.c#L100
-```static TEE_Result ta_open(const TEE_UUID *uuid,
-			  struct user_ta_store_handle **h)
+```static TEE_Result ta_open(const TEE_UUID uuid,
+			  struct user_ta_store_handle h)
           /* Request TA from tee-supplicant */
 ```
 
