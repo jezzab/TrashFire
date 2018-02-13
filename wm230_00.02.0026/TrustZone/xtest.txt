@@ -1,0 +1,840 @@
+Run test suite with level=0
+
+TEE test application started with device [(null)]
+######################################################
+#
+# XTEST_TEE_TEST
+#
+######################################################
+ 
+* XTEST_TEE_1001 Core self tests
+  XTEST_TEE_1001 OK
+ 
+* XTEST_TEE_1004 Test User Crypt TA
+o XTEST_TEE_1004.1 AES encrypt
+  XTEST_TEE_1004.1 OK
+o XTEST_TEE_1004.2 AES decrypt
+  XTEST_TEE_1004.2 OK
+o XTEST_TEE_1004.3 SHA-256 test, 3 bytes input
+  XTEST_TEE_1004.3 OK
+o XTEST_TEE_1004.4 AES-256 ECB encrypt test, 32 bytes input, with fixed key
+  XTEST_TEE_1004.4 OK
+o XTEST_TEE_1004.5 AES-256 ECB decrypt test, 32 bytes input, with fixed key
+  XTEST_TEE_1004.5 OK
+  XTEST_TEE_1004 OK
+ 
+* XTEST_TEE_1005 Many sessions
+  XTEST_TEE_1005 OK
+ 
+* XTEST_TEE_1006 Test Basic OS features
+  XTEST_TEE_1006 OK
+ 
+* XTEST_TEE_1007 Test Panic
+  XTEST_TEE_1007 OK
+ 
+* XTEST_TEE_1008 TEE internal client API
+o XTEST_TEE_1008.1 Invoke command
+  XTEST_TEE_1008.1 OK
+o XTEST_TEE_1008.2 Invoke command with timeout
+  XTEST_TEE_1008.2 OK
+o XTEST_TEE_1008.3 Create session fail
+n = 0
+n = 1
+n = 2
+n = 3
+n = 4
+n = 5
+n = 6
+n = 7
+n = 8
+n = 9
+n = 10
+n = 11
+n = 12
+n = 13
+n = 14
+n = 15
+n = 16
+n = 17
+n = 18
+n = 19
+n = 20
+n = 21
+n = 22
+n = 23
+n = 24
+n = 25
+n = 26
+n = 27
+n = 28
+n = 29
+n = 30
+n = 31
+n = 32
+n = 33
+n = 34
+n = 35
+n = 36
+n = 37
+n = 38
+n = 39
+n = 40
+n = 41
+n = 42
+n = 43
+n = 44
+n = 45
+n = 46
+n = 47
+n = 48
+n = 49
+n = 50
+n = 51
+n = 52
+n = 53
+n = 54
+n = 55
+n = 56
+n = 57
+n = 58
+n = 59
+n = 60
+n = 61
+n = 62
+n = 63
+n = 64
+n = 65
+n = 66
+n = 67
+n = 68
+n = 69
+n = 70
+n = 71
+n = 72
+n = 73
+n = 74
+n = 75
+n = 76
+n = 77
+n = 78
+n = 79
+n = 80
+n = 81
+n = 82
+n = 83
+n = 84
+n = 85
+n = 86
+n = 87
+n = 88
+n = 89
+n = 90
+n = 91
+n = 92
+n = 93
+n = 94
+n = 95
+n = 96
+n = 97
+n = 98
+n = 99
+  XTEST_TEE_1008.3 OK
+o XTEST_TEE_1008.4 Load fake uuid TA
+external/optee/optee_test/host/xtest/xtest_1000.c:616: r has an unexpected value: 0x0 = false, expected 0x1 = true
+  XTEST_TEE_1008.4 FAILED
+o XTEST_TEE_1008.5 Load corrupt TA
+external/optee/optee_test/host/xtest/xtest_1000.c:636: r has an unexpected value: 0x0 = false, expected 0x1 = true
+external/optee/optee_test/host/xtest/xtest_1000.c:734: load_corrupt_ta(c, __builtin_offsetof (struct shdr, magic), 1) has an unexpected value: 0x0 = false, expected 0x1 = true
+external/optee/optee_test/host/xtest/xtest_1000.c:636: r has an unexpected value: 0x0 = false, expected 0x1 = true
+external/optee/optee_test/host/xtest/xtest_1000.c:736: load_corrupt_ta(c, __builtin_offsetof (struct shdr, img_type), 1) has an unexpected value: 0x0 = false, expected 0x1 = true
+external/optee/optee_test/host/xtest/xtest_1000.c:636: r has an unexpected value: 0x0 = false, expected 0x1 = true
+external/optee/optee_test/host/xtest/xtest_1000.c:738: load_corrupt_ta(c, __builtin_offsetof (struct shdr, img_size), 1) has an unexpected value: 0x0 = false, expected 0x1 = true
+external/optee/optee_test/host/xtest/xtest_1000.c:636: r has an unexpected value: 0x0 = false, expected 0x1 = true
+external/optee/optee_test/host/xtest/xtest_1000.c:740: load_corrupt_ta(c, __builtin_offsetof (struct shdr, algo), 1) has an unexpected value: 0x0 = false, expected 0x1 = true
+external/optee/optee_test/host/xtest/xtest_1000.c:636: r has an unexpected value: 0x0 = false, expected 0x1 = true
+external/optee/optee_test/host/xtest/xtest_1000.c:742: load_corrupt_ta(c, __builtin_offsetof (struct shdr, hash_size), 1) has an unexpected value: 0x0 = false, expected 0x1 = true
+external/optee/optee_test/host/xtest/xtest_1000.c:636: r has an unexpected value: 0x0 = false, expected 0x1 = true
+external/optee/optee_test/host/xtest/xtest_1000.c:744: load_corrupt_ta(c, __builtin_offsetof (struct shdr, sig_size), 1) has an unexpected value: 0x0 = false, expected 0x1 = true
+external/optee/optee_test/host/xtest/xtest_1000.c:636: r has an unexpected value: 0x0 = false, expected 0x1 = true
+external/optee/optee_test/host/xtest/xtest_1000.c:746: load_corrupt_ta(c, sizeof(struct shdr), 1) has an unexpected value: 0x0 = false, expected 0x1 = true
+external/optee/optee_test/host/xtest/xtest_1000.c:636: r has an unexpected value: 0x0 = false, expected 0x1 = true
+external/optee/optee_test/host/xtest/xtest_1000.c:748: load_corrupt_ta(c, sizeof(struct shdr) + 32, 1) has an unexpected value: 0x0 = false, expected 0x1 = true
+external/optee/optee_test/host/xtest/xtest_1000.c:636: r has an unexpected value: 0x0 = false, expected 0x1 = true
+external/optee/optee_test/host/xtest/xtest_1000.c:749: load_corrupt_ta(c, 3000, 1) has an unexpected value: 0x0 = false, expected 0x1 = true
+external/optee/optee_test/host/xtest/xtest_1000.c:636: r has an unexpected value: 0x0 = false, expected 0x1 = true
+external/optee/optee_test/host/xtest/xtest_1000.c:750: load_corrupt_ta(c, 30000, 1) has an unexpected value: 0x0 = false, expected 0x1 = true
+  XTEST_TEE_1008.5 FAILED
+  XTEST_TEE_1008 FAILED
+ 
+* XTEST_TEE_1009 TEE Wait
+o XTEST_TEE_1009.1 TEE Wait 0.1s
+  XTEST_TEE_1009.1 OK
+o XTEST_TEE_1009.2 TEE Wait 0.5s
+  XTEST_TEE_1009.2 OK
+o XTEST_TEE_1009.3 TEE Wait 2s cancel
+  XTEST_TEE_1009.3 OK
+o XTEST_TEE_1009.4 TEE Wait 2s
+  XTEST_TEE_1009.4 OK
+  XTEST_TEE_1009 OK
+ 
+* XTEST_TEE_1010 Invalid memory access
+o XTEST_TEE_1010.1 Invalid memory access 1
+  XTEST_TEE_1010.1 OK
+o XTEST_TEE_1010.2 Invalid memory access 2
+  XTEST_TEE_1010.2 OK
+o XTEST_TEE_1010.3 Invalid memory access 3
+  XTEST_TEE_1010.3 OK
+o XTEST_TEE_1010.4 Invalid memory access 4
+  XTEST_TEE_1010.4 OK
+o XTEST_TEE_1010.5 Invalid memory access 5
+  XTEST_TEE_1010.5 OK
+  XTEST_TEE_1010 OK
+ 
+* XTEST_TEE_1011 Test RPC features with User Crypt TA
+o XTEST_TEE_1011.1 AES encrypt
+  XTEST_TEE_1011.1 OK
+o XTEST_TEE_1011.2 AES decrypt
+  XTEST_TEE_1011.2 OK
+o XTEST_TEE_1011.3 SHA-256 test, 3 bytes input
+  XTEST_TEE_1011.3 OK
+o XTEST_TEE_1011.4 AES-256 ECB encrypt test, 32 bytes input, with fixed key
+  XTEST_TEE_1011.4 OK
+o XTEST_TEE_1011.5 AES-256 ECB decrypt test, 32 bytes input, with fixed key
+  XTEST_TEE_1011.5 OK
+  XTEST_TEE_1011 OK
+ 
+* XTEST_TEE_1012 Test Single Instance Multi Session features with SIMS TA
+o XTEST_TEE_1012.1 Single Instance Multi Session
+  XTEST_TEE_1012.1 OK
+  XTEST_TEE_1012 OK
+ 
+* XTEST_TEE_1013 Test concurency with concurrent TA
+o XTEST_TEE_1013.1 Using small concurrency TA
+o XTEST_TEE_1013.1.1 Busy loop repeat 10000
+  XTEST_TEE_1013.1.1 OK
+o XTEST_TEE_1013.1.2 SHA-256 loop repeat 1000
+  XTEST_TEE_1013.1.2 OK
+o XTEST_TEE_1013.1.3 Busy loop repeat 10000
+  XTEST_TEE_1013.1.3 OK
+o XTEST_TEE_1013.1.4 SHA-256 loop repeat 1000
+  XTEST_TEE_1013.1.4 OK
+o XTEST_TEE_1013.1.5 Busy loop repeat 10000
+  XTEST_TEE_1013.1.5 OK
+o XTEST_TEE_1013.1.6 SHA-256 loop repeat 1000
+  XTEST_TEE_1013.1.6 OK
+o XTEST_TEE_1013.1.7 Busy loop repeat 10000
+  XTEST_TEE_1013.1.7 OK
+o XTEST_TEE_1013.1.8 SHA-256 loop repeat 1000
+  XTEST_TEE_1013.1.8 OK
+o XTEST_TEE_1013.1.9 Busy loop repeat 10000
+  XTEST_TEE_1013.1.9 OK
+o XTEST_TEE_1013.1.10 SHA-256 loop repeat 1000
+  XTEST_TEE_1013.1.10 OK
+o XTEST_TEE_1013.1.11 Busy loop repeat 10000
+  XTEST_TEE_1013.1.11 OK
+o XTEST_TEE_1013.1.12 SHA-256 loop repeat 1000
+  XTEST_TEE_1013.1.12 OK
+o XTEST_TEE_1013.1.13 Busy loop repeat 10000
+  XTEST_TEE_1013.1.13 OK
+o XTEST_TEE_1013.1.14 SHA-256 loop repeat 1000
+  XTEST_TEE_1013.1.14 OK
+o XTEST_TEE_1013.1.15 Busy loop repeat 10000
+  XTEST_TEE_1013.1.15 OK
+o XTEST_TEE_1013.1.16 SHA-256 loop repeat 1000
+  XTEST_TEE_1013.1.16 OK
+o XTEST_TEE_1013.1.17 Busy loop repeat 10000
+  XTEST_TEE_1013.1.17 OK
+o XTEST_TEE_1013.1.18 SHA-256 loop repeat 1000
+  XTEST_TEE_1013.1.18 OK
+o XTEST_TEE_1013.1.19 Busy loop repeat 10000
+  XTEST_TEE_1013.1.19 OK
+o XTEST_TEE_1013.1.20 SHA-256 loop repeat 1000
+  XTEST_TEE_1013.1.20 OK
+o XTEST_TEE_1013.1.21 Busy loop repeat 10000
+  XTEST_TEE_1013.1.21 OK
+o XTEST_TEE_1013.1.22 SHA-256 loop repeat 1000
+  XTEST_TEE_1013.1.22 OK
+o XTEST_TEE_1013.1.23 Busy loop repeat 10000
+  XTEST_TEE_1013.1.23 OK
+o XTEST_TEE_1013.1.24 SHA-256 loop repeat 1000
+  XTEST_TEE_1013.1.24 OK
+    Number of parallel threads: 3
+    Mean concurrency: 3
+  XTEST_TEE_1013.1 OK
+o XTEST_TEE_1013.2 Using large concurrency TA
+o XTEST_TEE_1013.2.1 Busy loop repeat 10000
+  XTEST_TEE_1013.2.1 OK
+o XTEST_TEE_1013.2.2 SHA-256 loop repeat 1000
+  XTEST_TEE_1013.2.2 OK
+o XTEST_TEE_1013.2.3 Busy loop repeat 10000
+  XTEST_TEE_1013.2.3 OK
+o XTEST_TEE_1013.2.4 SHA-256 loop repeat 1000
+  XTEST_TEE_1013.2.4 OK
+o XTEST_TEE_1013.2.5 Busy loop repeat 10000
+  XTEST_TEE_1013.2.5 OK
+o XTEST_TEE_1013.2.6 SHA-256 loop repeat 1000
+  XTEST_TEE_1013.2.6 OK
+o XTEST_TEE_1013.2.7 Busy loop repeat 10000
+  XTEST_TEE_1013.2.7 OK
+o XTEST_TEE_1013.2.8 SHA-256 loop repeat 1000
+  XTEST_TEE_1013.2.8 OK
+o XTEST_TEE_1013.2.9 Busy loop repeat 10000
+  XTEST_TEE_1013.2.9 OK
+o XTEST_TEE_1013.2.10 SHA-256 loop repeat 1000
+  XTEST_TEE_1013.2.10 OK
+o XTEST_TEE_1013.2.11 Busy loop repeat 10000
+  XTEST_TEE_1013.2.11 OK
+o XTEST_TEE_1013.2.12 SHA-256 loop repeat 1000
+  XTEST_TEE_1013.2.12 OK
+o XTEST_TEE_1013.2.13 Busy loop repeat 10000
+  XTEST_TEE_1013.2.13 OK
+o XTEST_TEE_1013.2.14 SHA-256 loop repeat 1000
+  XTEST_TEE_1013.2.14 OK
+o XTEST_TEE_1013.2.15 Busy loop repeat 10000
+  XTEST_TEE_1013.2.15 OK
+o XTEST_TEE_1013.2.16 SHA-256 loop repeat 1000
+  XTEST_TEE_1013.2.16 OK
+o XTEST_TEE_1013.2.17 Busy loop repeat 10000
+  XTEST_TEE_1013.2.17 OK
+o XTEST_TEE_1013.2.18 SHA-256 loop repeat 1000
+  XTEST_TEE_1013.2.18 OK
+o XTEST_TEE_1013.2.19 Busy loop repeat 10000
+  XTEST_TEE_1013.2.19 OK
+o XTEST_TEE_1013.2.20 SHA-256 loop repeat 1000
+  XTEST_TEE_1013.2.20 OK
+o XTEST_TEE_1013.2.21 Busy loop repeat 10000
+  XTEST_TEE_1013.2.21 OK
+o XTEST_TEE_1013.2.22 SHA-256 loop repeat 1000
+  XTEST_TEE_1013.2.22 OK
+o XTEST_TEE_1013.2.23 Busy loop repeat 10000
+  XTEST_TEE_1013.2.23 OK
+o XTEST_TEE_1013.2.24 SHA-256 loop repeat 1000
+  XTEST_TEE_1013.2.24 OK
+    Number of parallel threads: 3
+    Mean concurrency: 3
+  XTEST_TEE_1013.2 OK
+  XTEST_TEE_1013 OK
+ 
+* XTEST_TEE_4001 Test TEE Internal API hash operations
+o XTEST_TEE_4001.1 Hash case 0 algo 0x50000001
+  XTEST_TEE_4001.1 OK
+o XTEST_TEE_4001.2 Hash case 1 algo 0x50000002
+  XTEST_TEE_4001.2 OK
+o XTEST_TEE_4001.3 Hash case 2 algo 0x50000003
+  XTEST_TEE_4001.3 OK
+o XTEST_TEE_4001.4 Hash case 3 algo 0x50000004
+  XTEST_TEE_4001.4 OK
+o XTEST_TEE_4001.5 Hash case 4 algo 0x50000004
+  XTEST_TEE_4001.5 OK
+o XTEST_TEE_4001.6 Hash case 5 algo 0x50000005
+  XTEST_TEE_4001.6 OK
+o XTEST_TEE_4001.7 Hash case 6 algo 0x50000006
+  XTEST_TEE_4001.7 OK
+  XTEST_TEE_4001 OK
+ 
+* XTEST_TEE_4002 Test TEE Internal API MAC operations
+o XTEST_TEE_4002.1 MAC case 0 algo 0x30000001
+  XTEST_TEE_4002.1 OK
+o XTEST_TEE_4002.2 MAC case 1 algo 0x30000002
+  XTEST_TEE_4002.2 OK
+o XTEST_TEE_4002.3 MAC case 2 algo 0x30000003
+  XTEST_TEE_4002.3 OK
+o XTEST_TEE_4002.4 MAC case 3 algo 0x30000004
+  XTEST_TEE_4002.4 OK
+o XTEST_TEE_4002.5 MAC case 4 algo 0x30000004
+  XTEST_TEE_4002.5 OK
+o XTEST_TEE_4002.6 MAC case 5 algo 0x30000005
+  XTEST_TEE_4002.6 OK
+o XTEST_TEE_4002.7 MAC case 6 algo 0x30000006
+  XTEST_TEE_4002.7 OK
+o XTEST_TEE_4002.8 MAC case 7 algo 0x30000110
+  XTEST_TEE_4002.8 OK
+o XTEST_TEE_4002.9 MAC case 8 algo 0x30000111
+  XTEST_TEE_4002.9 OK
+o XTEST_TEE_4002.10 MAC case 9 algo 0x30000113
+  XTEST_TEE_4002.10 OK
+o XTEST_TEE_4002.11 MAC case 10 algo 0x30000510
+  XTEST_TEE_4002.11 OK
+o XTEST_TEE_4002.12 MAC case 11 algo 0x30000511
+  XTEST_TEE_4002.12 OK
+o XTEST_TEE_4002.13 MAC case 12 algo 0x30000513
+  XTEST_TEE_4002.13 OK
+o XTEST_TEE_4002.14 MAC case 13 algo 0x30000510
+  XTEST_TEE_4002.14 OK
+o XTEST_TEE_4002.15 MAC case 14 algo 0x30000511
+  XTEST_TEE_4002.15 OK
+o XTEST_TEE_4002.16 MAC case 15 algo 0x30000513
+  XTEST_TEE_4002.16 OK
+o XTEST_TEE_4002.17 MAC case 16 algo 0x30000513
+  XTEST_TEE_4002.17 OK
+o XTEST_TEE_4002.18 MAC case 17 algo 0x30000610
+  XTEST_TEE_4002.18 OK
+o XTEST_TEE_4002.19 MAC case 18 algo 0x30000610
+  XTEST_TEE_4002.19 OK
+o XTEST_TEE_4002.20 MAC case 19 algo 0x30000610
+  XTEST_TEE_4002.20 OK
+o XTEST_TEE_4002.21 MAC case 20 algo 0x30000610
+  XTEST_TEE_4002.21 OK
+o XTEST_TEE_4002.22 MAC case 21 algo 0x30000610
+  XTEST_TEE_4002.22 OK
+o XTEST_TEE_4002.23 MAC case 22 algo 0x30000610
+  XTEST_TEE_4002.23 OK
+o XTEST_TEE_4002.24 MAC case 23 algo 0x30000610
+  XTEST_TEE_4002.24 OK
+o XTEST_TEE_4002.25 MAC case 24 algo 0x30000610
+  XTEST_TEE_4002.25 OK
+o XTEST_TEE_4002.26 MAC case 25 algo 0x30000610
+  XTEST_TEE_4002.26 OK
+o XTEST_TEE_4002.27 MAC case 26 algo 0x30000610
+  XTEST_TEE_4002.27 OK
+o XTEST_TEE_4002.28 MAC case 27 algo 0x30000610
+  XTEST_TEE_4002.28 OK
+o XTEST_TEE_4002.29 MAC case 28 algo 0x30000610
+  XTEST_TEE_4002.29 OK
+  XTEST_TEE_4002 OK
+ 
+* XTEST_TEE_4003_XTS Test TEE Internal API cipher operations for AES XTS
+o XTEST_TEE_4003_XTS.1 Cipher case 0 algo 0x10000410 line 2307
+  XTEST_TEE_4003_XTS.1 OK
+o XTEST_TEE_4003_XTS.2 Cipher case 1 algo 0x10000410 line 2307
+  XTEST_TEE_4003_XTS.2 OK
+o XTEST_TEE_4003_XTS.3 Cipher case 2 algo 0x10000410 line 2308
+  XTEST_TEE_4003_XTS.3 OK
+o XTEST_TEE_4003_XTS.4 Cipher case 3 algo 0x10000410 line 2308
+  XTEST_TEE_4003_XTS.4 OK
+o XTEST_TEE_4003_XTS.5 Cipher case 4 algo 0x10000410 line 2309
+  XTEST_TEE_4003_XTS.5 OK
+o XTEST_TEE_4003_XTS.6 Cipher case 5 algo 0x10000410 line 2309
+  XTEST_TEE_4003_XTS.6 OK
+o XTEST_TEE_4003_XTS.7 Cipher case 6 algo 0x10000410 line 2310
+  XTEST_TEE_4003_XTS.7 OK
+o XTEST_TEE_4003_XTS.8 Cipher case 7 algo 0x10000410 line 2310
+  XTEST_TEE_4003_XTS.8 OK
+o XTEST_TEE_4003_XTS.9 Cipher case 8 algo 0x10000410 line 2311
+  XTEST_TEE_4003_XTS.9 OK
+o XTEST_TEE_4003_XTS.10 Cipher case 9 algo 0x10000410 line 2311
+  XTEST_TEE_4003_XTS.10 OK
+o XTEST_TEE_4003_XTS.11 Cipher case 10 algo 0x10000410 line 2312
+  XTEST_TEE_4003_XTS.11 OK
+o XTEST_TEE_4003_XTS.12 Cipher case 11 algo 0x10000410 line 2312
+  XTEST_TEE_4003_XTS.12 OK
+o XTEST_TEE_4003_XTS.13 Cipher case 12 algo 0x10000410 line 2313
+  XTEST_TEE_4003_XTS.13 OK
+o XTEST_TEE_4003_XTS.14 Cipher case 13 algo 0x10000410 line 2313
+  XTEST_TEE_4003_XTS.14 OK
+o XTEST_TEE_4003_XTS.15 Cipher case 14 algo 0x10000410 line 2314
+  XTEST_TEE_4003_XTS.15 OK
+o XTEST_TEE_4003_XTS.16 Cipher case 15 algo 0x10000410 line 2314
+  XTEST_TEE_4003_XTS.16 OK
+o XTEST_TEE_4003_XTS.17 Cipher case 16 algo 0x10000410 line 2315
+  XTEST_TEE_4003_XTS.17 OK
+o XTEST_TEE_4003_XTS.18 Cipher case 17 algo 0x10000410 line 2315
+  XTEST_TEE_4003_XTS.18 OK
+o XTEST_TEE_4003_XTS.19 Cipher case 18 algo 0x10000410 line 2316
+  XTEST_TEE_4003_XTS.19 OK
+o XTEST_TEE_4003_XTS.20 Cipher case 19 algo 0x10000410 line 2316
+  XTEST_TEE_4003_XTS.20 OK
+o XTEST_TEE_4003_XTS.21 Cipher case 20 algo 0x10000410 line 2317
+  XTEST_TEE_4003_XTS.21 OK
+o XTEST_TEE_4003_XTS.22 Cipher case 21 algo 0x10000410 line 2317
+  XTEST_TEE_4003_XTS.22 OK
+o XTEST_TEE_4003_XTS.23 Cipher case 22 algo 0x10000410 line 2318
+  XTEST_TEE_4003_XTS.23 OK
+o XTEST_TEE_4003_XTS.24 Cipher case 23 algo 0x10000410 line 2318
+  XTEST_TEE_4003_XTS.24 OK
+o XTEST_TEE_4003_XTS.25 Cipher case 24 algo 0x10000410 line 2319
+  XTEST_TEE_4003_XTS.25 OK
+o XTEST_TEE_4003_XTS.26 Cipher case 25 algo 0x10000410 line 2319
+  XTEST_TEE_4003_XTS.26 OK
+o XTEST_TEE_4003_XTS.27 Cipher case 26 algo 0x10000410 line 2320
+  XTEST_TEE_4003_XTS.27 OK
+o XTEST_TEE_4003_XTS.28 Cipher case 27 algo 0x10000410 line 2320
+  XTEST_TEE_4003_XTS.28 OK
+o XTEST_TEE_4003_XTS.29 Cipher case 28 algo 0x10000410 line 2321
+  XTEST_TEE_4003_XTS.29 OK
+o XTEST_TEE_4003_XTS.30 Cipher case 29 algo 0x10000410 line 2321
+  XTEST_TEE_4003_XTS.30 OK
+o XTEST_TEE_4003_XTS.31 Cipher case 30 algo 0x10000410 line 2322
+  XTEST_TEE_4003_XTS.31 OK
+o XTEST_TEE_4003_XTS.32 Cipher case 31 algo 0x10000410 line 2322
+  XTEST_TEE_4003_XTS.32 OK
+o XTEST_TEE_4003_XTS.33 Cipher case 32 algo 0x10000410 line 2323
+  XTEST_TEE_4003_XTS.33 OK
+o XTEST_TEE_4003_XTS.34 Cipher case 33 algo 0x10000410 line 2323
+  XTEST_TEE_4003_XTS.34 OK
+o XTEST_TEE_4003_XTS.35 Cipher case 34 algo 0x10000410 line 2324
+  XTEST_TEE_4003_XTS.35 OK
+o XTEST_TEE_4003_XTS.36 Cipher case 35 algo 0x10000410 line 2324
+  XTEST_TEE_4003_XTS.36 OK
+o XTEST_TEE_4003_XTS.37 Cipher case 36 algo 0x10000410 line 2325
+  XTEST_TEE_4003_XTS.37 OK
+o XTEST_TEE_4003_XTS.38 Cipher case 37 algo 0x10000410 line 2325
+  XTEST_TEE_4003_XTS.38 OK
+  XTEST_TEE_4003_XTS OK
+ 
+* XTEST_TEE_4004 Test TEE Internal API get random
+o XTEST_TEE_4004.1 TEE get random
+  XTEST_TEE_4004.1 OK
+  XTEST_TEE_4004 OK
+ 
+* XTEST_TEE_4005 Test TEE Internal API Authenticated Encryption operations
+o XTEST_TEE_4005.1 AE case 0 algo 0x40000710 line 2708
+  XTEST_TEE_4005.1 OK
+o XTEST_TEE_4005.2 AE case 1 algo 0x40000710 line 2708
+  XTEST_TEE_4005.2 OK
+o XTEST_TEE_4005.3 AE case 2 algo 0x40000710 line 2709
+  XTEST_TEE_4005.3 OK
+o XTEST_TEE_4005.4 AE case 3 algo 0x40000710 line 2709
+  XTEST_TEE_4005.4 OK
+o XTEST_TEE_4005.5 AE case 4 algo 0x40000710 line 2710
+  XTEST_TEE_4005.5 OK
+o XTEST_TEE_4005.6 AE case 5 algo 0x40000710 line 2710
+  XTEST_TEE_4005.6 OK
+o XTEST_TEE_4005.7 AE case 6 algo 0x40000810 line 2712
+  XTEST_TEE_4005.7 OK
+o XTEST_TEE_4005.8 AE case 7 algo 0x40000810 line 2712
+  XTEST_TEE_4005.8 OK
+o XTEST_TEE_4005.9 AE case 8 algo 0x40000810 line 2713
+  XTEST_TEE_4005.9 OK
+o XTEST_TEE_4005.10 AE case 9 algo 0x40000810 line 2713
+  XTEST_TEE_4005.10 OK
+o XTEST_TEE_4005.11 AE case 10 algo 0x40000810 line 2714
+  XTEST_TEE_4005.11 OK
+o XTEST_TEE_4005.12 AE case 11 algo 0x40000810 line 2714
+  XTEST_TEE_4005.12 OK
+o XTEST_TEE_4005.13 AE case 12 algo 0x40000810 line 2715
+  XTEST_TEE_4005.13 OK
+o XTEST_TEE_4005.14 AE case 13 algo 0x40000810 line 2715
+  XTEST_TEE_4005.14 OK
+o XTEST_TEE_4005.15 AE case 14 algo 0x40000810 line 2716
+  XTEST_TEE_4005.15 OK
+o XTEST_TEE_4005.16 AE case 15 algo 0x40000810 line 2716
+  XTEST_TEE_4005.16 OK
+o XTEST_TEE_4005.17 AE case 16 algo 0x40000810 line 2717
+  XTEST_TEE_4005.17 OK
+o XTEST_TEE_4005.18 AE case 17 algo 0x40000810 line 2717
+  XTEST_TEE_4005.18 OK
+o XTEST_TEE_4005.19 AE case 18 algo 0x40000810 line 2718
+  XTEST_TEE_4005.19 OK
+o XTEST_TEE_4005.20 AE case 19 algo 0x40000810 line 2718
+  XTEST_TEE_4005.20 OK
+o XTEST_TEE_4005.21 AE case 20 algo 0x40000810 line 2719
+  XTEST_TEE_4005.21 OK
+o XTEST_TEE_4005.22 AE case 21 algo 0x40000810 line 2719
+  XTEST_TEE_4005.22 OK
+o XTEST_TEE_4005.23 AE case 22 algo 0x40000810 line 2720
+  XTEST_TEE_4005.23 OK
+o XTEST_TEE_4005.24 AE case 23 algo 0x40000810 line 2720
+  XTEST_TEE_4005.24 OK
+o XTEST_TEE_4005.25 AE case 24 algo 0x40000810 line 2721
+  XTEST_TEE_4005.25 OK
+o XTEST_TEE_4005.26 AE case 25 algo 0x40000810 line 2721
+  XTEST_TEE_4005.26 OK
+o XTEST_TEE_4005.27 AE case 26 algo 0x40000810 line 2722
+  XTEST_TEE_4005.27 OK
+o XTEST_TEE_4005.28 AE case 27 algo 0x40000810 line 2722
+  XTEST_TEE_4005.28 OK
+o XTEST_TEE_4005.29 AE case 28 algo 0x40000810 line 2723
+  XTEST_TEE_4005.29 OK
+o XTEST_TEE_4005.30 AE case 29 algo 0x40000810 line 2723
+  XTEST_TEE_4005.30 OK
+o XTEST_TEE_4005.31 AE case 30 algo 0x40000810 line 2724
+  XTEST_TEE_4005.31 OK
+o XTEST_TEE_4005.32 AE case 31 algo 0x40000810 line 2724
+  XTEST_TEE_4005.32 OK
+o XTEST_TEE_4005.33 AE case 32 algo 0x40000810 line 2725
+  XTEST_TEE_4005.33 OK
+o XTEST_TEE_4005.34 AE case 33 algo 0x40000810 line 2725
+  XTEST_TEE_4005.34 OK
+o XTEST_TEE_4005.35 AE case 34 algo 0x40000810 line 2726
+  XTEST_TEE_4005.35 OK
+o XTEST_TEE_4005.36 AE case 35 algo 0x40000810 line 2726
+  XTEST_TEE_4005.36 OK
+o XTEST_TEE_4005.37 AE case 36 algo 0x40000810 line 2727
+  XTEST_TEE_4005.37 OK
+o XTEST_TEE_4005.38 AE case 37 algo 0x40000810 line 2727
+  XTEST_TEE_4005.38 OK
+o XTEST_TEE_4005.39 AE case 38 algo 0x40000810 line 2728
+  XTEST_TEE_4005.39 OK
+o XTEST_TEE_4005.40 AE case 39 algo 0x40000810 line 2728
+  XTEST_TEE_4005.40 OK
+o XTEST_TEE_4005.41 AE case 40 algo 0x40000810 line 2729
+  XTEST_TEE_4005.41 OK
+o XTEST_TEE_4005.42 AE case 41 algo 0x40000810 line 2729
+  XTEST_TEE_4005.42 OK
+o XTEST_TEE_4005.43 AE case 42 algo 0x40000810 line 2730
+  XTEST_TEE_4005.43 OK
+o XTEST_TEE_4005.44 AE case 43 algo 0x40000810 line 2730
+  XTEST_TEE_4005.44 OK
+  XTEST_TEE_4005 OK
+ 
+* XTEST_TEE_4006 Test TEE Internal API Asymmetric Cipher operations
+o XTEST_TEE_4006.1 Asym Crypto case 0 algo 0x60000030 line 2992
+  XTEST_TEE_4006.1 OK
+o XTEST_TEE_4006.2 Asym Crypto case 1 algo 0x60000030 line 2994
+  XTEST_TEE_4006.2 OK
+o XTEST_TEE_4006.3 Asym Crypto case 2 algo 0x60000030 line 2996
+  XTEST_TEE_4006.3 OK
+o XTEST_TEE_4006.4 Asym Crypto case 3 algo 0x60000030 line 2998
+  XTEST_TEE_4006.4 OK
+o XTEST_TEE_4006.5 Asym Crypto case 4 algo 0x70002830 line 3000
+  XTEST_TEE_4006.5 OK
+o XTEST_TEE_4006.6 Asym Crypto case 5 algo 0x70002830 line 3002
+  XTEST_TEE_4006.6 OK
+o XTEST_TEE_4006.7 Asym Crypto case 16 algo 0x70003830 line 3025
+  XTEST_TEE_4006.7 OK
+o XTEST_TEE_4006.8 Asym Crypto case 17 algo 0x70003830 line 3027
+  XTEST_TEE_4006.8 OK
+o XTEST_TEE_4006.9 Asym Crypto case 18 algo 0x70004830 line 3030
+  XTEST_TEE_4006.9 OK
+o XTEST_TEE_4006.10 Asym Crypto case 19 algo 0x70004830 line 3032
+  XTEST_TEE_4006.10 OK
+o XTEST_TEE_4006.11 Asym Crypto case 20 algo 0x70005830 line 3035
+  XTEST_TEE_4006.11 OK
+o XTEST_TEE_4006.12 Asym Crypto case 21 algo 0x70005830 line 3037
+  XTEST_TEE_4006.12 OK
+o XTEST_TEE_4006.13 Asym Crypto case 22 algo 0x70006830 line 3040
+  XTEST_TEE_4006.13 OK
+o XTEST_TEE_4006.14 Asym Crypto case 23 algo 0x70006830 line 3042
+  XTEST_TEE_4006.14 OK
+o XTEST_TEE_4006.15 Asym Crypto case 28 algo 0x70414930 line 3059
+  XTEST_TEE_4006.15 OK
+o XTEST_TEE_4006.16 Asym Crypto case 29 algo 0x70414930 line 3062
+  XTEST_TEE_4006.16 OK
+o XTEST_TEE_4006.17 Asym Crypto case 34 algo 0x60000130 line 3079
+  XTEST_TEE_4006.17 OK
+o XTEST_TEE_4006.18 Asym Crypto case 35 algo 0x60000130 line 3081
+  XTEST_TEE_4006.18 OK
+o XTEST_TEE_4006.19 Asym Crypto case 40 algo 0x60210230 line 3093
+  XTEST_TEE_4006.19 OK
+o XTEST_TEE_4006.20 Asym Crypto case 41 algo 0x60210230 line 3096
+  XTEST_TEE_4006.20 OK
+o XTEST_TEE_4006.21 Asym Crypto case 46 algo 0x60000030 line 3112
+  XTEST_TEE_4006.21 OK
+o XTEST_TEE_4006.22 Asym Crypto case 47 algo 0x60000030 line 3114
+  XTEST_TEE_4006.22 OK
+o XTEST_TEE_4006.23 Asym Crypto case 50 algo 0x70002830 line 3120
+  XTEST_TEE_4006.23 OK
+o XTEST_TEE_4006.24 Asym Crypto case 51 algo 0x70002830 line 3122
+  XTEST_TEE_4006.24 OK
+o XTEST_TEE_4006.25 Asym Crypto case 62 algo 0x70004830 line 3144
+  XTEST_TEE_4006.25 OK
+o XTEST_TEE_4006.26 Asym Crypto case 63 algo 0x70004830 line 3146
+  XTEST_TEE_4006.26 OK
+o XTEST_TEE_4006.27 Asym Crypto case 72 algo 0x70414930 line 3169
+  XTEST_TEE_4006.27 OK
+o XTEST_TEE_4006.28 Asym Crypto case 73 algo 0x70414930 line 3172
+  XTEST_TEE_4006.28 OK
+o XTEST_TEE_4006.29 Asym Crypto case 78 algo 0x60000130 line 3187
+  XTEST_TEE_4006.29 OK
+o XTEST_TEE_4006.30 Asym Crypto case 79 algo 0x60000130 line 3189
+  XTEST_TEE_4006.30 OK
+o XTEST_TEE_4006.31 Asym Crypto case 84 algo 0x60210230 line 3201
+  XTEST_TEE_4006.31 OK
+o XTEST_TEE_4006.32 Asym Crypto case 85 algo 0x60210230 line 3204
+  XTEST_TEE_4006.32 OK
+o XTEST_TEE_4006.33 Asym Crypto case 150 algo 0x70004131 line 3287
+  XTEST_TEE_4006.33 OK
+o XTEST_TEE_4006.34 Asym Crypto case 151 algo 0x70004131 line 3288
+  XTEST_TEE_4006.34 OK
+o XTEST_TEE_4006.35 Asym Crypto case 270 algo 0x70001041 line 3423
+  XTEST_TEE_4006.35 OK
+o XTEST_TEE_4006.36 Asym Crypto case 271 algo 0x70001041 line 3425
+  XTEST_TEE_4006.36 OK
+  XTEST_TEE_4006 OK
+ 
+* XTEST_TEE_4007 Test TEE Internal API Generate key
+o XTEST_TEE_4007.1 Generate AES key
+  XTEST_TEE_4007.1 OK
+o XTEST_TEE_4007.2 Generate DES key
+  XTEST_TEE_4007.2 OK
+o XTEST_TEE_4007.3 Generate DES3 key
+  XTEST_TEE_4007.3 OK
+o XTEST_TEE_4007.4 Generate HMAC-MD5 key
+  XTEST_TEE_4007.4 OK
+o XTEST_TEE_4007.5 Generate HMAC-SHA1 key
+  XTEST_TEE_4007.5 OK
+o XTEST_TEE_4007.6 Generate HMAC-SHA224 key
+  XTEST_TEE_4007.6 OK
+o XTEST_TEE_4007.7 Generate HMAC-SHA256 key
+  XTEST_TEE_4007.7 OK
+o XTEST_TEE_4007.8 Generate HMAC-SHA384 key
+  XTEST_TEE_4007.8 OK
+o XTEST_TEE_4007.9 Generate HMAC-SHA512 key
+  XTEST_TEE_4007.9 OK
+o XTEST_TEE_4007.10 Generate Generic secret key
+  XTEST_TEE_4007.10 OK
+o XTEST_TEE_4007.11 Generate RSA-256 key
+  XTEST_TEE_4007.11 OK
+o XTEST_TEE_4007.12 Generate DH key 256 bits - Private bits = 0
+  XTEST_TEE_4007.12 OK
+o XTEST_TEE_4007.13 Generate DH key 320 bits - Private bits = 256
+  XTEST_TEE_4007.13 OK
+o XTEST_TEE_4007.14 Generate DSA key 512 bits
+  XTEST_TEE_4007.14 OK
+o XTEST_TEE_4007.15 Generate ECDSA-192
+  XTEST_TEE_4007.15 OK
+o XTEST_TEE_4007.16 Generate ECDH-192
+  XTEST_TEE_4007.16 OK
+  XTEST_TEE_4007 OK
+ 
+* XTEST_TEE_4008 Test TEE Internal API Derive key
+o XTEST_TEE_4008.1 Derive DH key success
+  XTEST_TEE_4008.1 OK
+  XTEST_TEE_4008 OK
+ 
+* XTEST_TEE_4009 Test TEE Internal API Derive key ECDH
+o XTEST_TEE_4009.1 Derive ECDH key - algo = 0x80001042
+  XTEST_TEE_4009.1 OK
+o XTEST_TEE_4009.2 Derive ECDH key - algo = 0x80002042
+  XTEST_TEE_4009.2 OK
+o XTEST_TEE_4009.3 Derive ECDH key - algo = 0x80003042
+  XTEST_TEE_4009.3 OK
+o XTEST_TEE_4009.4 Derive ECDH key - algo = 0x80004042
+  XTEST_TEE_4009.4 OK
+o XTEST_TEE_4009.5 Derive ECDH key - algo = 0x80005042
+  XTEST_TEE_4009.5 OK
+  XTEST_TEE_4009 OK
+ 
+* XTEST_TEE_4010 Test TEE Internal API create transient object (negative)
+  XTEST_TEE_4010 OK
+ 
+* XTEST_TEE_4011 Test TEE Internal API Bleichenbacher attack (negative)
+Iteration 0
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+Iteration 6
+Iteration 7
+Iteration 8
+  XTEST_TEE_4011 OK
+ 
+* XTEST_TEE_7001 29-84-6d
+  XTEST_TEE_7001 OK
+ 
+* XTEST_TEE_7003 29-b0-da
+  XTEST_TEE_7003 OK
+ 
+* XTEST_TEE_7004 29-1c-00
+  XTEST_TEE_7004 OK
+ 
+* XTEST_TEE_7005 29-9f-a2
+  XTEST_TEE_7005 OK
+ 
+* XTEST_TEE_7006 29-11-02
+  XTEST_TEE_7006 OK
+ 
+* XTEST_TEE_7007 29-1f-a2
+  XTEST_TEE_7007 OK
+ 
+* XTEST_TEE_7008 29-2e-8d
+  XTEST_TEE_7008 OK
+ 
+* XTEST_TEE_7009 29-2b-3f
+  XTEST_TEE_7009 OK
+ 
+* XTEST_TEE_7010 29-cd-39
+  XTEST_TEE_7010 OK
+ 
+* XTEST_TEE_7013 29-a2-e3
+  XTEST_TEE_7013 OK
+ 
+* XTEST_TEE_7016 29-db-48
+  XTEST_TEE_7016 OK
+ 
+* XTEST_TEE_7017 29-a1-83
+  XTEST_TEE_7017 OK
+ 
+* XTEST_TEE_7018 29-c1-a5
+  XTEST_TEE_7018 OK
+ 
+* XTEST_TEE_7019 29-91-aa
+  XTEST_TEE_7019 OK
+ 
+* XTEST_TEE_10001 Test TEE Internal API key derivation extensions
+o XTEST_TEE_10001.1 HKDF RFC 5869 A.1 (SHA-256)
+  XTEST_TEE_10001.1 OK
+o XTEST_TEE_10001.2 HKDF RFC 5869 A.2 (SHA-256)
+  XTEST_TEE_10001.2 OK
+o XTEST_TEE_10001.3 HKDF RFC 5869 A.3 (SHA-256) [1]
+  XTEST_TEE_10001.3 OK
+o XTEST_TEE_10001.4 HKDF RFC 5869 A.3 (SHA-256) [2]
+  XTEST_TEE_10001.4 OK
+o XTEST_TEE_10001.5 HKDF RFC 5869 A.4 (SHA-1)
+  XTEST_TEE_10001.5 OK
+o XTEST_TEE_10001.6 HKDF RFC 5869 A.5 (SHA-1)
+  XTEST_TEE_10001.6 OK
+o XTEST_TEE_10001.7 HKDF RFC 5869 A.6 (SHA-1) [1]
+  XTEST_TEE_10001.7 OK
+o XTEST_TEE_10001.8 HKDF RFC 5869 A.6 (SHA-1) [2]
+  XTEST_TEE_10001.8 OK
+o XTEST_TEE_10001.9 HKDF RFC 5869 A.7 (SHA-1) [1]
+  XTEST_TEE_10001.9 OK
+o XTEST_TEE_10001.10 HKDF RFC 5869 A.7 (SHA-1) [2]
+  XTEST_TEE_10001.10 OK
+o XTEST_TEE_10001.11 Concat KDF JWA-37 C (SHA-256)
+  XTEST_TEE_10001.11 OK
+o XTEST_TEE_10001.12 PBKDF2 RFC 6070 1 (HMAC-SHA1)
+  XTEST_TEE_10001.12 OK
+o XTEST_TEE_10001.13 PBKDF2 RFC 6070 2 (HMAC-SHA1)
+  XTEST_TEE_10001.13 OK
+o XTEST_TEE_10001.14 PBKDF2 RFC 6070 3 (HMAC-SHA1)
+  XTEST_TEE_10001.14 OK
+o XTEST_TEE_10001.15 PBKDF2 RFC 6070 5 (HMAC-SHA1)
+  XTEST_TEE_10001.15 OK
+o XTEST_TEE_10001.16 PBKDF2 RFC 6070 6 (HMAC-SHA1)
+  XTEST_TEE_10001.16 OK
+  XTEST_TEE_10001 OK
+ 
+* XTEST_TEE_10002 Secure Storage Key Manager API Self Test
+Ignore test due to TA does not exist
+  XTEST_TEE_10002 OK
++-----------------------------------------------------
+Result of testsuite XTEST_TEE_TEST:
+XTEST_TEE_1001 OK
+XTEST_TEE_1004 OK
+XTEST_TEE_1005 OK
+XTEST_TEE_1006 OK
+XTEST_TEE_1007 OK
+XTEST_TEE_1008.4 FAILED first error at external/optee/optee_test/host/xtest/xtest_1000.c:616
+XTEST_TEE_1008.5 FAILED first error at external/optee/optee_test/host/xtest/xtest_1000.c:636
+XTEST_TEE_1008 FAILED
+XTEST_TEE_1009 OK
+XTEST_TEE_1010 OK
+XTEST_TEE_1011 OK
+XTEST_TEE_1012 OK
+XTEST_TEE_1013 OK
+XTEST_TEE_4001 OK
+XTEST_TEE_4002 OK
+XTEST_TEE_4003_XTS OK
+XTEST_TEE_4004 OK
+XTEST_TEE_4005 OK
+XTEST_TEE_4006 OK
+XTEST_TEE_4007 OK
+XTEST_TEE_4008 OK
+XTEST_TEE_4009 OK
+XTEST_TEE_4010 OK
+XTEST_TEE_4011 OK
+XTEST_TEE_7001 OK
+XTEST_TEE_7003 OK
+XTEST_TEE_7004 OK
+XTEST_TEE_7005 OK
+XTEST_TEE_7006 OK
+XTEST_TEE_7007 OK
+XTEST_TEE_7008 OK
+XTEST_TEE_7009 OK
+XTEST_TEE_7010 OK
+XTEST_TEE_7013 OK
+XTEST_TEE_7016 OK
+XTEST_TEE_7017 OK
+XTEST_TEE_7018 OK
+XTEST_TEE_7019 OK
+XTEST_TEE_10001 OK
+XTEST_TEE_10002 OK
++-----------------------------------------------------
+21482 subtests of which 21 failed
+38 test cases of which 1 failed
+0 test case was skipped
+TEE test application done!
