@@ -131,6 +131,7 @@ https://www.slideshare.net/linaroorg/lcu14103-how-to-create-and-run-trusted-appl
 https://www.youtube.com/watch?v=QgaGJow7hws
 https://github.com/OP-TEE/optee_os/commit/d0c636148b3a
 https://github.com/OP-TEE/optee_os/blob/master/documentation/optee_design.md#12-trusted-applications
+
 ```There are two ways to implement Trusted Applications (TAs), pseudo TAs and user mode TAs. User mode TAs are full featured Trusted Applications as specified by the GlobalPlatform TEE specifications, these are simply referred to as 'Trusted Applications'. For most cases, user mode TAs are preferred.```
 
 https://wiki.linaro.org/WorkingGroups/Security/OP-TEE
@@ -141,11 +142,10 @@ ta_load >> ta_store->open >> ta_open >> check_shdr >> crypto_ops.acipher.rsassa_
 ```
 
 https://github.com/OP-TEE/optee_os/blob/master/core/arch/arm/kernel/user_ta.c#L261
-```/*-----------------------------------------------------------------------------
+```
  * Loads TA header and hashes.
  * Verifies the TA signature.
  * Returns context ptr and TEE_Result.
- *---------------------------------------------------------------------------*/
 static TEE_Result ta_load(const TEE_UUID *uuid,
 			  const struct user_ta_store_ops *ta_store,
 			  struct tee_ta_ctx **ta_ctx)```
@@ -157,10 +157,10 @@ https://github.com/OP-TEE/optee_os/blob/master/core/arch/arm/kernel/ree_fs_ta.c#
 ```
 
 https://github.com/OP-TEE/optee_os/blob/master/documentation/optee_design.md#12-trusted-applications
-```
+
 File format of a Dynamic Trusted Application (unpacked TZTA files)
 The format a TA is:
-
+```
 <Signed header>
 <ELF>
 Where <ELF> is the content of a standard ELF file and <Signed header> consists of:
