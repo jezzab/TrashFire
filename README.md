@@ -122,7 +122,13 @@ Food for thought
 https://googleprojectzero.blogspot.com/2017/07/trust-issues-exploiting-trustzone-tees.html
 https://www.cs.ucsb.edu/~vigna/publications/2017_NDSS_Boomerang.pdf (mentioned above)
 
-# Trusted Applications 
+# Known Trusted Applications. 
+0388301d-7a5b-4153-968c3a668ae6cdd8.ta - "FW UTIL TA"
+5b9e0e40-2636-11e1-ad9e0002a5d5c51b.ta - "Hello world!" https://github.com/OP-TEE/optee_test/blob/master/ta/os_test/os_test.c
+f157cda0-550c-11e5-a6fa0002a5d5c51b.ta - "OP-TEE sanity testsuite (xtest)" - https://github.com/OP-TEE/optee_test
+
+# What are Trusted Applications?
+
 https://www.ietf.org/proceedings/99/slides/slides-99-edu-sessi-trusted-execution-environments-tee-and-the-open-trust-protocol-otrp-00.pdf
 https://www.owasp.org/images/c/c8/OWASP_Security_Tapas_-_TrustZone%2C_TEE_and_Mobile_Security_final.pdf
 https://www.slideshare.net/linaroorg/hkg15311-optee-for-beginners-and-porting-review
