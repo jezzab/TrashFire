@@ -85,6 +85,7 @@ root@eagle_wm230:/ # busybox find / -name "*tee*"
 /sys/module/optee
 /dev/teepriv0
 /dev/tee0
+/data/tmp/optee_armtz/
 ```
 
 Several obvious TrustZone artifacts are left around... 
@@ -216,4 +217,26 @@ open session success
  nfz_xxx.db write chunk size:0x2fd000
  buffer=0xb6a02000, size=0x2fd000, count=1
 verify pass nfz_xxx.db```
+
+# TZASC - TrustZone Address Space Controller 
+
+```
+/proc/irq/85/f0480000.tzasc
+/proc/irq/86/f0480000.tzasc
+/proc/irq/87/f0480000.tzasc
+/proc/irq/88/f0480000.tzasc
+/proc/irq/89/f0480000.tzasc
+/proc/irq/90/f0480000.tzasc
+/proc/irq/91/f0480000.tzasc
+/sys/bus/platform/devices/f0480000.tzasc
+/sys/bus/platform/drivers/tzasc
+/sys/bus/platform/drivers/tzasc/f0480000.tzasc
+/sys/devices/platform/f0480000.tzasc
+/sys/devices/platform/f0480000.tzasc/tzasc_configure
+/sys/devices/platform/f0480000.tzasc/tzasc_region_configure
+/sys/devices/platform/f0480000.tzasc/tzasc_bug_on
+/sys/devices/platform/f0480000.tzasc/tzasc_region_disable
+/sys/firmware/devicetree/base/tzasc@F0480000
+/sys/firmware/devicetree/base/tzasc@F0480000/tzasc-port-num
+```
 
