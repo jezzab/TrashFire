@@ -119,6 +119,8 @@ DECIMAL       HEXADECIMAL     DESCRIPTION
 73588         0x11F74         CRC32 polynomial table, little endian
 ```
 
+Never mind the rest of the unencrypted files, like flyctrl.img.FCFW inside of wm230_01.00.0100/OTA/ota-01-25-2018.zip
+
 Food for thought
 https://googleprojectzero.blogspot.com/2017/07/trust-issues-exploiting-trustzone-tees.html
 https://www.cs.ucsb.edu/~vigna/publications/2017_NDSS_Boomerang.pdf (mentioned above)
