@@ -191,4 +191,29 @@ A static TA is just an interface exposing special services in optee_os core to d
 On the other hand, a static TA can access the hardware directly by calling any driver code inside the TEE core. This means you may use a static TA to extend the services offered by the GP Internal API, without adding any new system call.
 Client Applications (CAs) in the normal world can communicate with static TAs in the same way they communicate with dynamic TAs. Dynamic TAs can also communicate with static TAs in the same way they communicate with other dynamic TAs, using GP Internal API. Static TAs, however, cannot communicate back to dynamic TAs due to the absence of GP Internal API in optee_os core code.
 
+# Extracting .ta files. 
+```
+126|root@eagle_wm230:/blackbox/x # dji_fw_verify -n djita -c TZTA -o /blackbox/x/wrekt.ta /vendor/ta/f157cda0-550c-11e5-a6fa0002a5d5c51b.ta
+input /vendor/ta/f157cda0-550c-11e5-a6fa0002a5d5c51b.ta, name: djita, chunk_id = 0x41545a54, output: /blackbox/x/wrekt.ta
+open session success
+ /blackbox/x/wrekt.ta write chunk size:0x11500
+ buffer=0xb6d2e000, size=0x11500, count=1
+verify pass /blackbox/x/wrekt.ta```
+
+We can see this matches the .TZTA files that Donny left behind accidentlly. 
+```
+127|root@eagle_wm230:/blackbox/x # md5sum  /blackbox/x/wrekt.ta                
+85ca8181f5ce36a079e8a739d18627c0  /blackbox/x/wrekt.ta
+128|root@eagle_wm230:/blackbox/x # md5sum /vendor/ta/f157cda0-550c-11e5-a6fa0002a5d5c51b.ta.TZTA                         <
+85ca8181f5ce36a079e8a739d18627c0  /vendor/ta/f157cda0-550c-11e5-a6fa0002a5d5c51b.ta.TZTA
+```
+
+NFZ can be similarly extracted
+```
+dji_fw_verify -n 1105 -c 1105 -o nfz_xxx.db  /vendor/nfz/nfz.fw
+input /vendor/nfz/nfz.fw, name: 1105, chunk_id = 0x35303131, output: nfz_xxx.db
+open session success
+ nfz_xxx.db write chunk size:0x2fd000
+ buffer=0xb6a02000, size=0x2fd000, count=1
+verify pass nfz_xxx.db```
 
